@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Rambla-Bold.ttf">
+            <string>Rambla-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Toast View View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="NSToastViewViewController" sceneMemberID="viewController">
@@ -14,14 +20,52 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-Gb-NWl">
+                                <rect key="frame" x="16" y="108" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gRh-Qk-JF0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rambla-Bold" family="Rambla" pointSize="16"/>
+                                <state key="normal" title="Toast IT  !..">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toastIt:" destination="whP-gf-Uak" eventType="touchUpInside" id="B5M-Cw-f94"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-yr-4Xt">
+                                <rect key="frame" x="16" y="20" width="288" height="80"/>
+                                <color key="backgroundColor" red="0.90346827651515149" green="0.90346827651515149" blue="0.90346827651515149" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ont-eX-x74"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qg5-Gb-NWl" secondAttribute="trailing" constant="16" id="6B2-2e-7QG"/>
+                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="8fy-7J-C7h"/>
+                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="Lhb-vR-BYO"/>
+                            <constraint firstItem="Qg5-Gb-NWl" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="Q9N-yp-rm9"/>
+                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="igH-BB-wEU"/>
+                            <constraint firstItem="Qg5-Gb-NWl" firstAttribute="top" secondItem="rqx-yr-4Xt" secondAttribute="bottom" constant="8" id="p6Q-SA-iyd"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toastText" destination="rqx-yr-4Xt" id="dNd-cu-y9X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="410" y="426"/>
         </scene>
     </scenes>
 </document>

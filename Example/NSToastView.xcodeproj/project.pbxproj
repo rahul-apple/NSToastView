@@ -22,6 +22,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BEE5AA1E1B844B8E00814064 /* NSToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5AA1D1B844B8E00814064 /* NSToastView.m */; };
+		BEE5AA241B84573E00814064 /* Rambla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */; };
+		BEE5AA251B84574100814064 /* Rambla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */; };
+		BEE5AA261B84574300814064 /* Rambla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */; };
+		BEE5AA271B84574600814064 /* Rambla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA231B84512F00814064 /* Rambla-Regular.ttf */; };
 		BF2880E14A29274018990277 /* Pods_NSToastView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F43CDF8F5458106FB9F2931 /* Pods_NSToastView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,7 +48,7 @@
 		553684E9DE005393F3C7569D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		586089408A56A0C718D9E291 /* Pods-NSToastView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSToastView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSToastView_Example/Pods-NSToastView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5F43CDF8F5458106FB9F2931 /* Pods_NSToastView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSToastView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* NSToastView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = NSToastView.app; path = NSToastView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* NSToastView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSToastView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +61,7 @@
 		6003F5A5195388D20070C39A /* NSToastViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSToastViewViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* NSToastViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSToastViewViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = NSToastView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* NSToastView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSToastView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,6 +70,12 @@
 		81FE297DDE20D14CD2E8662B /* Pods-NSToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSToastView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSToastView_Tests/Pods-NSToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BBECAA20C45335F654DEF405 /* NSToastView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSToastView.podspec; path = ../NSToastView.podspec; sourceTree = "<group>"; };
+		BEE5AA1C1B844B8E00814064 /* NSToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToastView.h; sourceTree = "<group>"; };
+		BEE5AA1D1B844B8E00814064 /* NSToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSToastView.m; sourceTree = "<group>"; };
+		BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-Bold.ttf"; sourceTree = "<group>"; };
+		BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-Italic.ttf"; sourceTree = "<group>"; };
+		BEE5AA231B84512F00814064 /* Rambla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +119,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* NSToastView.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* NSToastView_Example.app */,
+				6003F5AE195388D20070C39A /* NSToastView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +141,8 @@
 		6003F593195388D20070C39A /* Example for NSToastView */ = {
 			isa = PBXGroup;
 			children = (
+				BEE5AA1F1B84512300814064 /* FOnt */,
+				BEE5AA1B1B844ABD00814064 /* Pod */,
 				6003F59C195388D20070C39A /* NSToastViewAppDelegate.h */,
 				6003F59D195388D20070C39A /* NSToastViewAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -182,6 +195,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BEE5AA1B1B844ABD00814064 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5AA1C1B844B8E00814064 /* NSToastView.h */,
+				BEE5AA1D1B844B8E00814064 /* NSToastView.m */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BEE5AA1F1B84512300814064 /* FOnt */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */,
+				BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */,
+				BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */,
+				BEE5AA231B84512F00814064 /* Rambla-Regular.ttf */,
+			);
+			name = FOnt;
+			sourceTree = "<group>";
+		};
 		D9EB77B31AC3AC5E80107A7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +246,7 @@
 			);
 			name = NSToastView_Example;
 			productName = NSToastView;
-			productReference = 6003F58A195388D20070C39A /* NSToastView.app */;
+			productReference = 6003F58A195388D20070C39A /* NSToastView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* NSToastView_Tests */ = {
@@ -234,7 +267,7 @@
 			);
 			name = NSToastView_Tests;
 			productName = NSToastViewTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* NSToastView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -276,9 +309,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE5AA241B84573E00814064 /* Rambla-Bold.ttf in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				BEE5AA271B84574600814064 /* Rambla-Regular.ttf in Resources */,
+				BEE5AA251B84574100814064 /* Rambla-BoldItalic.ttf in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				BEE5AA261B84574300814064 /* Rambla-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +430,7 @@
 				6003F59E195388D20070C39A /* NSToastViewAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NSToastViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BEE5AA1E1B844B8E00814064 /* NSToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

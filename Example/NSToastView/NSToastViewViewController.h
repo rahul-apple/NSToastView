@@ -9,5 +9,7 @@
 @import UIKit;
 
 @interface NSToastViewViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextView *toastText;
 
+- (IBAction)toastIt:(id)sender;
 @end
