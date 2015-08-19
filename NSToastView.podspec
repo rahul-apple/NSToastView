@@ -22,7 +22,7 @@ The class designed for showing a Toast with an Object in IOS .The code written i
                        DESC
 
   s.homepage         = "https://github.com/rahul-apple/NSToastView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  # s.screenshots     = "http://imgur.com/KMjmhPDhttp://imgur.com/KMjmhPD"
   s.license          = 'MIT'
   s.author           = { "rahul-apple" => "rahulthazhuthala@gmail.com" }
   s.source           = { :git => "https://github.com/rahul-apple/NSToastView.git", :tag => s.version.to_s }
