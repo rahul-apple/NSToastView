@@ -13,6 +13,8 @@ The class is Designed for Show Toast in iOS App  similar To the Android Toast.
 
 ## Requirements
 
+iOS 6.0
+
 ## Installation
 
 NSToastView is available through [CocoaPods](http://cocoapods.org). To install
@@ -26,6 +28,7 @@ it, simply add the following line to your Podfile:
 }];
 
 ```
+##POD
 
 ```ruby
 pod "NSToastView"
