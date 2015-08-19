@@ -1,0 +1,6 @@
+framework module Pods_NSToastView_Example {
+  umbrella header "Pods-NSToastView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

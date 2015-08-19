@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.3):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.3)
+  - FBSnapshotTestCase/Core (2.0.3)
+  - FBSnapshotTestCase/SwiftSupport (2.0.3):
+    - FBSnapshotTestCase/Core
+  - NSToastView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - NSToastView (from `../`)
+
+EXTERNAL SOURCES:
+  NSToastView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d0eeca6bf87958e088b254396ae66873f971cfb1
+  NSToastView: f3cbc8ad3d25070e8f4bc6f9d20f72799c7aa1c1
+
+COCOAPODS: 0.38.2
