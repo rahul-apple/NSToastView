@@ -9,8 +9,8 @@
 
 Pod::Spec.new do |s|
 s.name             = "NSToastView"
-s.version          = "0.1.2"
-s.summary          = "Class designed for the Toast ."
+s.version          = "1.0.0"
+s.summary          = "Android Similar toast library for iOS"
 s.description      = <<-DESC
 
 Toast in iOS
