@@ -15,26 +15,26 @@ typedef void (^NSToastBlock)(void);
 /**
  *  ToastView Config
  */
-+ (void)nsSetAppearanceBackgroundColor:(UIColor *)backgroundColor;
-+ (void)nsSetAppearanceCornerRadius:(CGFloat)cornerRadius;
-+ (void)nsSetAppearanceMaxHeight:(CGFloat)maxHeight;
-+ (void)nsSetAppearanceMaxWidth:(CGFloat)maxWidth;
-+ (void)nsSetAppearanceOffsetBottom:(CGFloat)offsetBottom;
-+ (void)nsSetAppearanceTextAligment:(NSTextAlignment)textAlignment;
-+ (void)nsSetAppearanceTextColor:(UIColor *)textColor;
-+ (void)nsSetAppearanceTextFont:(UIFont *)textFont;
-+ (void)nsSetAppearanceTextInsets:(UIEdgeInsets)textInsets;
-+ (void)nsSetToastViewShowDuration:(NSTimeInterval)duration;
++ (void)setAppearanceBackgroundColor:(UIColor *)backgroundColor;
++ (void)setAppearanceCornerRadius:(CGFloat)cornerRadius;
++ (void)setAppearanceMaxHeight:(CGFloat)maxHeight;
++ (void)setAppearanceMaxWidth:(CGFloat)maxWidth;
++ (void)setAppearanceOffsetBottom:(CGFloat)offsetBottom;
++ (void)setAppearanceTextAligment:(NSTextAlignment)textAlignment;
++ (void)setAppearanceTextColor:(UIColor *)textColor;
++ (void)setAppearanceTextFont:(UIFont *)textFont;
++ (void)setAppearanceTextInsets:(UIEdgeInsets)textInsets;
++ (void)setToastViewShowDuration:(NSTimeInterval)duration;
 
 /**
  *  ToastView Show
  */
-+ (void)nsShowToast:(id)toast;
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration;
-+ (void)nsShowToast:(id)toast delay:(NSTimeInterval)delay;
-+ (void)nsShowToast:(id)toast completion:(NSToastBlock)completion;
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay;
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration completion:(NSToastBlock)completion;
-+ (void)nsShowToast:(id)toast delay:(NSTimeInterval)delay completion:(NSToastBlock)completion;
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(NSToastBlock)completion;
++ (void)showToast:(id)toast;
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration;
++ (void)showToast:(id)toast delay:(NSTimeInterval)delay;
++ (void)showToast:(id)toast completion:(NSToastBlock)completion;
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay;
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration completion:(NSToastBlock)completion;
++ (void)showToast:(id)toast delay:(NSTimeInterval)delay completion:(NSToastBlock)completion;
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(NSToastBlock)completion;
 @end

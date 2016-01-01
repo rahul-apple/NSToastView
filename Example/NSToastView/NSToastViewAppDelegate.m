@@ -16,9 +16,9 @@
 {
     // Override point for customization after application launch.
    
-    [NSToastView nsSetAppearanceTextFont:[UIFont fontWithName:@"Rambla-Regular" size:16]];
-    [NSToastView nsSetAppearanceMaxWidth:CGRectGetWidth([UIScreen mainScreen].bounds) - 64.0f];
-    [NSToastView nsSetAppearanceOffsetBottom:76.0];
+    [NSToastView setAppearanceTextFont:[UIFont fontWithName:@"Segoe UI" size:16]];
+    [NSToastView setAppearanceMaxWidth:CGRectGetWidth([UIScreen mainScreen].bounds) - 64.0f];
+    [NSToastView setAppearanceOffsetBottom:76.0];
     return YES;
 }
 

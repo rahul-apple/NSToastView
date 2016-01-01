@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Rambla-Bold.ttf">
-            <string>Rambla-Bold</string>
-        </mutableArray>
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Toast View View Controller-->
@@ -16,56 +21,168 @@
             <objects>
                 <viewController id="whP-gf-Uak" customClass="NSToastViewViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="zIu-4v-64I"/>
+                        <viewControllerLayoutGuide type="bottom" id="pek-Oz-3Bq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-Gb-NWl">
-                                <rect key="frame" x="16" y="108" width="288" height="30"/>
-                                <color key="backgroundColor" red="0.59607843140000005" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3I-Zw-yyD">
+                                <rect key="frame" x="16" y="60" width="382" height="477.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSToastView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZJ-O5-76b">
+                                        <rect key="frame" x="129.5" y="8" width="123" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="tmH-c6-sf7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toast Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOh-Ci-QWy">
+                                        <rect key="frame" x="16" y="54" width="350" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="WUK-1v-Rax"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corner Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYQ-Tu-Qnm">
+                                        <rect key="frame" x="16" y="128.5" width="187" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="UK7-lj-4qj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Toast Message Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yfm-NU-26N">
+                                        <rect key="frame" x="16" y="76" width="350" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="z0n-oK-IpE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="whP-gf-Uak" id="eK5-ew-YQn"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYc-Zl-Pd3">
+                                        <rect key="frame" x="211" y="120" width="100" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="OHC-an-4w7"/>
+                                            <constraint firstAttribute="width" constant="100" id="PBc-Z4-BDW"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="z8d-2P-PSV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kUB-kW-c0d">
+                                        <rect key="frame" x="319" y="123.5" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="hWK-HH-Mot"/>
+                                            <constraint firstAttribute="height" constant="31" id="jIC-DF-WJc"/>
+                                        </constraints>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehD-qA-cff">
+                                        <rect key="frame" x="16" y="178.5" width="187" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="lol-Lh-HcD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-uR-UEF">
+                                        <rect key="frame" x="211" y="170" width="100" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="Mdb-vH-Y4d"/>
+                                            <constraint firstAttribute="width" constant="100" id="OeE-dt-IP0"/>
+                                            <constraint firstAttribute="height" constant="38" id="rsB-2c-yI6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mnF-8x-fGx">
+                                        <rect key="frame" x="319" y="173.5" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="3Vy-dn-eOi"/>
+                                            <constraint firstAttribute="height" constant="31" id="VoA-ci-shQ"/>
+                                        </constraints>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-Gb-NWl">
+                                        <rect key="frame" x="17" y="414.5" width="348" height="38"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="VFZ-BC-A0U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <state key="normal" title="ShowToast">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toastIt:" destination="whP-gf-Uak" eventType="touchUpInside" id="B5M-Cw-f94"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="gRh-Qk-JF0"/>
+                                    <constraint firstItem="ehD-qA-cff" firstAttribute="leading" secondItem="E3I-Zw-yyD" secondAttribute="leading" constant="16" id="2Lq-Qp-ZUz"/>
+                                    <constraint firstItem="kUB-kW-c0d" firstAttribute="centerY" secondItem="eYc-Zl-Pd3" secondAttribute="centerY" id="2ON-tT-SSa"/>
+                                    <constraint firstItem="mnF-8x-fGx" firstAttribute="centerY" secondItem="1Qg-uR-UEF" secondAttribute="centerY" id="3bg-xm-ceM"/>
+                                    <constraint firstItem="kUB-kW-c0d" firstAttribute="leading" secondItem="eYc-Zl-Pd3" secondAttribute="trailing" constant="8" symbolic="YES" id="3fs-gT-WeK"/>
+                                    <constraint firstItem="AYQ-Tu-Qnm" firstAttribute="centerY" secondItem="eYc-Zl-Pd3" secondAttribute="centerY" id="4AY-La-78N"/>
+                                    <constraint firstItem="mnF-8x-fGx" firstAttribute="trailing" secondItem="kUB-kW-c0d" secondAttribute="trailing" id="5Ua-px-MzZ"/>
+                                    <constraint firstItem="kZJ-O5-76b" firstAttribute="top" secondItem="E3I-Zw-yyD" secondAttribute="top" constant="8" id="5r2-vf-yFc"/>
+                                    <constraint firstItem="Yfm-NU-26N" firstAttribute="top" secondItem="HOh-Ci-QWy" secondAttribute="bottom" constant="1" id="7hN-Ki-r0J"/>
+                                    <constraint firstItem="AYQ-Tu-Qnm" firstAttribute="leading" secondItem="E3I-Zw-yyD" secondAttribute="leading" constant="16" id="8P7-oI-MfG"/>
+                                    <constraint firstItem="Qg5-Gb-NWl" firstAttribute="leading" secondItem="E3I-Zw-yyD" secondAttribute="leading" constant="17" id="J6q-vm-YwF"/>
+                                    <constraint firstItem="Yfm-NU-26N" firstAttribute="leading" secondItem="E3I-Zw-yyD" secondAttribute="leading" constant="16" id="Qao-Ba-5kX"/>
+                                    <constraint firstItem="1Qg-uR-UEF" firstAttribute="top" secondItem="eYc-Zl-Pd3" secondAttribute="bottom" constant="12" id="R9X-8h-bhX"/>
+                                    <constraint firstItem="HOh-Ci-QWy" firstAttribute="top" secondItem="kZJ-O5-76b" secondAttribute="bottom" constant="19" id="RZ1-dj-xc1"/>
+                                    <constraint firstItem="eYc-Zl-Pd3" firstAttribute="leading" secondItem="AYQ-Tu-Qnm" secondAttribute="trailing" constant="8" symbolic="YES" id="WD0-No-Mg2"/>
+                                    <constraint firstItem="ehD-qA-cff" firstAttribute="centerY" secondItem="1Qg-uR-UEF" secondAttribute="centerY" id="WNM-WR-22p"/>
+                                    <constraint firstAttribute="trailing" secondItem="HOh-Ci-QWy" secondAttribute="trailing" constant="16" id="aXt-un-aSh"/>
+                                    <constraint firstItem="kZJ-O5-76b" firstAttribute="centerX" secondItem="E3I-Zw-yyD" secondAttribute="centerX" id="axG-2p-dS6"/>
+                                    <constraint firstItem="eYc-Zl-Pd3" firstAttribute="top" secondItem="Yfm-NU-26N" secondAttribute="bottom" constant="6" id="cRg-dH-ciA"/>
+                                    <constraint firstItem="mnF-8x-fGx" firstAttribute="leading" secondItem="1Qg-uR-UEF" secondAttribute="trailing" constant="8" symbolic="YES" id="eD8-X5-yhU"/>
+                                    <constraint firstItem="HOh-Ci-QWy" firstAttribute="leading" secondItem="E3I-Zw-yyD" secondAttribute="leading" constant="16" id="elW-Q8-aly"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qg5-Gb-NWl" secondAttribute="trailing" constant="17" id="iBx-2o-AXA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yfm-NU-26N" secondAttribute="trailing" constant="16" id="psu-As-xTa"/>
+                                    <constraint firstItem="1Qg-uR-UEF" firstAttribute="leading" secondItem="ehD-qA-cff" secondAttribute="trailing" constant="8" symbolic="YES" id="t3m-6w-COj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qg5-Gb-NWl" secondAttribute="bottom" constant="25" id="uqH-x8-6HQ"/>
+                                    <constraint firstItem="kUB-kW-c0d" firstAttribute="trailing" secondItem="Yfm-NU-26N" secondAttribute="trailing" id="w93-a8-nGL"/>
+                                    <constraint firstAttribute="width" secondItem="E3I-Zw-yyD" secondAttribute="height" multiplier="1:1.25" id="xf5-jf-dmW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rambla-Bold" family="Rambla" pointSize="16"/>
-                                <state key="normal" title="Toast IT  !..">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="toastIt:" destination="whP-gf-Uak" eventType="touchUpInside" id="B5M-Cw-f94"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-yr-4Xt">
-                                <rect key="frame" x="16" y="20" width="288" height="80"/>
-                                <color key="backgroundColor" red="0.90346827651515149" green="0.90346827651515149" blue="0.90346827651515149" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ont-eX-x74"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Qg5-Gb-NWl" secondAttribute="trailing" constant="16" id="6B2-2e-7QG"/>
-                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="8fy-7J-C7h"/>
-                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="Lhb-vR-BYO"/>
-                            <constraint firstItem="Qg5-Gb-NWl" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="Q9N-yp-rm9"/>
-                            <constraint firstItem="rqx-yr-4Xt" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="igH-BB-wEU"/>
-                            <constraint firstItem="Qg5-Gb-NWl" firstAttribute="top" secondItem="rqx-yr-4Xt" secondAttribute="bottom" constant="8" id="p6Q-SA-iyd"/>
+                            <constraint firstAttribute="trailing" secondItem="E3I-Zw-yyD" secondAttribute="trailing" constant="16" id="R8W-cz-221"/>
+                            <constraint firstItem="E3I-Zw-yyD" firstAttribute="top" secondItem="zIu-4v-64I" secondAttribute="bottom" constant="16" id="idv-g0-OWz"/>
+                            <constraint firstItem="E3I-Zw-yyD" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="zP2-Vf-xsH"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="toastText" destination="rqx-yr-4Xt" id="dNd-cu-y9X"/>
+                        <outlet property="configContainer" destination="E3I-Zw-yyD" id="Hj8-4H-GJq"/>
+                        <outlet property="toastButton" destination="Qg5-Gb-NWl" id="1RG-FK-Udl"/>
+                        <outlet property="toastText" destination="Yfm-NU-26N" id="mUA-nq-gkz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="426"/>
+            <point key="canvasLocation" x="408.69565217391306" y="425.89285714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

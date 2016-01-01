@@ -8,7 +8,7 @@
 
 #import "NSToastViewViewController.h"
 #import "NSToastView.h"
-@interface NSToastViewViewController ()
+@interface NSToastViewViewController ()<UITextFieldDelegate>
 
 @end
 
@@ -18,6 +18,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self setupUIComponents];
+}
+
+- (void)setupUIComponents{
+    [self.configContainer.layer setCornerRadius:5.0f];
+//    [self.configContainer.layer setBorderWidth:0.5f];
+//    [self.configContainer.layer setBorderColor:[UIColor grayColor].CGColor];
+    [self.configContainer.layer setShadowColor:[UIColor blackColor].CGColor];
+    [self.configContainer.layer setShadowRadius:5.0f];
+    [self.configContainer.layer setShadowOpacity:0.4f];
+    [self.configContainer.layer setShadowOffset:CGSizeMake(2, 3)];
+    [self.toastButton.layer setCornerRadius:5.0f];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,8 +43,13 @@
 - (IBAction)toastIt:(id)sender {
 //    [self.toastText resignFirstResponder];
     NSString *test = self.toastText.text;
-    [NSToastView nsShowToast:test duration:4.0f completion: ^{
-        [NSToastView nsShowToast:@"Toast Time OUT  :)" delay:0.5f];
+    [NSToastView showToast:test duration:4.0f completion: ^{
+        [NSToastView showToast:@"Toast Time OUT  :)" delay:0.5f];
     }];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return TRUE;
 }
 @end

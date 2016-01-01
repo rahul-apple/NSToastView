@@ -20,7 +20,7 @@
 static UIColor *_backgroundColor = nil;
 static UIColor *_textColor = nil;
 static UIFont *_textFont = nil;
-static CGFloat _cornerRadius = 0.0f;
+static CGFloat _cornerRadius = 5.0f;
 static CGFloat _duration = NS_TOAST_VIEW_SHOW_DURATION;
 static CGFloat _maxWidth = 0.0f;
 static CGFloat _maxHeight = 0.0f;
@@ -37,76 +37,76 @@ static NSTextAlignment _textAligment = NSTextAlignmentCenter;
 
 #pragma -mark NSToastView Configuration Methods
 
-+ (void)nsSetAppearanceBackgroundColor:(UIColor *)backgroundColor {
++ (void)setAppearanceBackgroundColor:(UIColor *)backgroundColor {
     _backgroundColor = [backgroundColor copy];
 }
 
-+ (void)nsSetAppearanceCornerRadius:(CGFloat)cornerRadius {
++ (void)setAppearanceCornerRadius:(CGFloat)cornerRadius {
     _cornerRadius = cornerRadius;
 }
 
-+ (void)nsSetAppearanceMaxHeight:(CGFloat)maxHeight {
++ (void)setAppearanceMaxHeight:(CGFloat)maxHeight {
     _maxHeight = maxHeight;
 }
 
-+ (void)nsSetAppearanceMaxWidth:(CGFloat)maxWidth {
++ (void)setAppearanceMaxWidth:(CGFloat)maxWidth {
     _maxWidth = maxWidth;
 }
 
-+ (void)nsSetAppearanceOffsetBottom:(CGFloat)offsetBottom {
++ (void)setAppearanceOffsetBottom:(CGFloat)offsetBottom {
     _offsetBottom = offsetBottom;
 }
 
-+ (void)nsSetAppearanceTextAligment:(NSTextAlignment)textAlignment {
++ (void)setAppearanceTextAligment:(NSTextAlignment)textAlignment {
     _textAligment = textAlignment;
 }
 
-+ (void)nsSetAppearanceTextColor:(UIColor *)textColor {
++ (void)setAppearanceTextColor:(UIColor *)textColor {
     _textColor = [textColor copy];
 }
 
-+ (void)nsSetAppearanceTextFont:(UIFont *)textFont {
++ (void)setAppearanceTextFont:(UIFont *)textFont {
     _textFont = [textFont copy];
 }
 
-+ (void)nsSetAppearanceTextInsets:(UIEdgeInsets)textInsets {
++ (void)setAppearanceTextInsets:(UIEdgeInsets)textInsets {
     _textInsets = textInsets;
 }
 
-+ (void)nsSetToastViewShowDuration:(NSTimeInterval)duration {
++ (void)setToastViewShowDuration:(NSTimeInterval)duration {
     _duration = duration;
 }
 
 #pragma mark - ToastView Show
-+ (void)nsShowToast:(id)toast {
-    return [self nsShowToast:toast duration:_duration];
++ (void)showToast:(id)toast {
+    return [self showToast:toast duration:_duration];
 }
 
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration {
-    return [self nsShowToast:toast duration:duration delay:NS_TOAST_VIEW_SHOW_DELAY];
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration {
+    return [self showToast:toast duration:duration delay:NS_TOAST_VIEW_SHOW_DELAY];
 }
 
-+ (void)nsShowToast:(id)toast delay:(NSTimeInterval)delay {
-    return [self nsShowToast:toast duration:_duration delay:delay];
++ (void)showToast:(id)toast delay:(NSTimeInterval)delay {
+    return [self showToast:toast duration:_duration delay:delay];
 }
 
-+ (void)nsShowToast:(id)toast completion:(NSToastBlock)completion {
-    return [self nsShowToast:toast duration:_duration completion:completion];
++ (void)showToast:(id)toast completion:(NSToastBlock)completion {
+    return [self showToast:toast duration:_duration completion:completion];
 }
 
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
-    return [self nsShowToast:toast duration:duration delay:delay completion:nil];
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
+    return [self showToast:toast duration:duration delay:delay completion:nil];
 }
 
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration completion:(NSToastBlock)completion {
-    return [self nsShowToast:toast duration:duration delay:NS_TOAST_VIEW_SHOW_DELAY completion:completion];
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration completion:(NSToastBlock)completion {
+    return [self showToast:toast duration:duration delay:NS_TOAST_VIEW_SHOW_DELAY completion:completion];
 }
 
-+ (void)nsShowToast:(id)toast delay:(NSTimeInterval)delay completion:(NSToastBlock)completion {
-    return [self nsShowToast:toast duration:_duration delay:delay completion:completion];
++ (void)showToast:(id)toast delay:(NSTimeInterval)delay completion:(NSToastBlock)completion {
+    return [self showToast:toast duration:_duration delay:delay completion:completion];
 }
 
-+ (void)nsShowToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(NSToastBlock)completion {
++ (void)showToast:(id)toast duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(NSToastBlock)completion {
     NSString *toastText = [NSString stringWithFormat:@"%@", toast];
     if (toastText.length < 1) {
         return;

@@ -22,7 +22,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BEE5AA1E1B844B8E00814064 /* NSToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5AA1D1B844B8E00814064 /* NSToastView.m */; };
+		95BC6C7B25ACAC5A00D86261 /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BC6C7725ACAC5800D86261 /* Segoe UI Bold.ttf */; };
+		95BC6C7C25ACAC5A00D86261 /* Segoe UI Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BC6C7825ACAC5800D86261 /* Segoe UI Italic.ttf */; };
+		95BC6C7D25ACAC5A00D86261 /* Segoe UI Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BC6C7925ACAC5900D86261 /* Segoe UI Bold Italic.ttf */; };
+		95BC6C7E25ACAC5A00D86261 /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BC6C7A25ACAC5900D86261 /* Segoe UI.ttf */; };
+		95E49BED25AB5F0F00A88F9D /* NSToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E49BEC25AB5F0F00A88F9D /* NSToastView.m */; };
 		BEE5AA241B84573E00814064 /* Rambla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */; };
 		BEE5AA251B84574100814064 /* Rambla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */; };
 		BEE5AA261B84574300814064 /* Rambla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */; };
@@ -69,9 +73,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		81FE297DDE20D14CD2E8662B /* Pods-NSToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSToastView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSToastView_Tests/Pods-NSToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		95BC6C7725ACAC5800D86261 /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
+		95BC6C7825ACAC5800D86261 /* Segoe UI Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Italic.ttf"; sourceTree = "<group>"; };
+		95BC6C7925ACAC5900D86261 /* Segoe UI Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold Italic.ttf"; sourceTree = "<group>"; };
+		95BC6C7A25ACAC5900D86261 /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
+		95E49BEB25AB5F0F00A88F9D /* NSToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSToastView.h; path = ../../Pod/Classes/NSToastView.h; sourceTree = "<group>"; };
+		95E49BEC25AB5F0F00A88F9D /* NSToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSToastView.m; path = ../../Pod/Classes/NSToastView.m; sourceTree = "<group>"; };
 		BBECAA20C45335F654DEF405 /* NSToastView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSToastView.podspec; path = ../NSToastView.podspec; sourceTree = "<group>"; };
-		BEE5AA1C1B844B8E00814064 /* NSToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToastView.h; sourceTree = "<group>"; };
-		BEE5AA1D1B844B8E00814064 /* NSToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSToastView.m; sourceTree = "<group>"; };
 		BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-Bold.ttf"; sourceTree = "<group>"; };
 		BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-BoldItalic.ttf"; sourceTree = "<group>"; };
 		BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rambla-Italic.ttf"; sourceTree = "<group>"; };
@@ -198,8 +206,8 @@
 		BEE5AA1B1B844ABD00814064 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BEE5AA1C1B844B8E00814064 /* NSToastView.h */,
-				BEE5AA1D1B844B8E00814064 /* NSToastView.m */,
+				95E49BEB25AB5F0F00A88F9D /* NSToastView.h */,
+				95E49BEC25AB5F0F00A88F9D /* NSToastView.m */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -207,6 +215,10 @@
 		BEE5AA1F1B84512300814064 /* FOnt */ = {
 			isa = PBXGroup;
 			children = (
+				95BC6C7925ACAC5900D86261 /* Segoe UI Bold Italic.ttf */,
+				95BC6C7725ACAC5800D86261 /* Segoe UI Bold.ttf */,
+				95BC6C7825ACAC5800D86261 /* Segoe UI Italic.ttf */,
+				95BC6C7A25ACAC5900D86261 /* Segoe UI.ttf */,
 				BEE5AA201B84512F00814064 /* Rambla-Bold.ttf */,
 				BEE5AA211B84512F00814064 /* Rambla-BoldItalic.ttf */,
 				BEE5AA221B84512F00814064 /* Rambla-Italic.ttf */,
@@ -290,6 +302,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -311,11 +324,15 @@
 			files = (
 				BEE5AA241B84573E00814064 /* Rambla-Bold.ttf in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				95BC6C7C25ACAC5A00D86261 /* Segoe UI Italic.ttf in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				95BC6C7D25ACAC5A00D86261 /* Segoe UI Bold Italic.ttf in Resources */,
+				95BC6C7E25ACAC5A00D86261 /* Segoe UI.ttf in Resources */,
 				BEE5AA271B84574600814064 /* Rambla-Regular.ttf in Resources */,
 				BEE5AA251B84574100814064 /* Rambla-BoldItalic.ttf in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				BEE5AA261B84574300814064 /* Rambla-Italic.ttf in Resources */,
+				95BC6C7B25ACAC5A00D86261 /* Segoe UI Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +447,7 @@
 				6003F59E195388D20070C39A /* NSToastViewAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NSToastViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				BEE5AA1E1B844B8E00814064 /* NSToastView.m in Sources */,
+				95E49BED25AB5F0F00A88F9D /* NSToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
